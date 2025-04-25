@@ -43,3 +43,23 @@ $ python collatz.py
 Please enter a positive integer: 10
 
 10 5 16 8 4 2 1
+
+## weekly task 05
+
+Write a program that outputs whether or not today is a weekday. (The program should be called weekday.py)
+
+You will need to search the web to find how you work out what day it is.
+
+An example of running this program on a Thursday is given below.
+
+$ python weekday.py
+
+Yes, unfortunately today is a weekday.
+
+
+An example of running it on a Saturday is as follows:
+
+$ python weekday.py
+
+It is the weekend, yay!
+There is no user input.
