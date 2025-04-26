@@ -108,13 +108,26 @@ Bank account numbers can stored as 10 character strings, for security reasons so
 
 Write a python program called accounts.py that reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
 
-$ python accounts.py
-Please enter an 10 digit account number: 1234567890
-XXXXXX7890
 
-Extra:
+1. create a function to get user to input a 10 digit account number
+Reference:Reference: Andrew Beatty lectures week 2.
 
-Modify the program to deal with account numbers of any length (yes that is a vague requirement, comment your assumptions)
+account_number = input("Please enter a 10-digit account number: ")
+
+2. after account number is input,hide the first 6 digits with "xxxxxx"
+to access the first 6 digits use [6:] and replace them with "xxxxxx"
+
+#Reference Andrew Beatty lecture topic 5 data structures and associated jupyter notebook
+#Reference: Chatgpt:prompt -how to hide first 6 digits of account number python,
+ https://chatgpt.com/c/680d6d03-cba4-8003-af4e-d11d931774e0. [Accessed 26 April 2025]
+
+Hidden_account = "xxxxxx" + account_number[6:] 
+
+3. then print the hidden account number 
+
+print(Hidden_account)
+
+        
 ## weekly task 04
 Write a program, called collatz.py, that asks the user to input any positive integer and outputs the successive values of the following calculation.
 
