@@ -11,6 +11,7 @@ Reference: Andrew Beatty, week 01 example on pushing items from visual studio co
 
 Also:
 Reference: W3schools on python strings link: https://www.w3schools.com/python/python_strings.asp
+
 Reference: Andrew beatty, week 03 Lecture on Strings
 
 
