@@ -1,6 +1,21 @@
 # pands-weekly-tasks
 ## weekly task 01
 This file should contain a python program that displays Hello World! when it is run.
+
+The Python program is the print() function, in which you type print followed by brackets that inclose the characters "Hello World!" which makes a string by adding the quotation marks each side. 
+
+Should look like this : print("Hello World!")
+
+For the code :
+Reference: Andrew Beatty, week 01 example on pushing items from visual studio code to github repository
+
+Also:
+Reference: W3schools on python strings link: https://www.w3schools.com/python/python_strings.asp
+Reference: Andrew beatty, week 03 Lecture on Strings
+
+
+
+
 ## weekly task 02
 Write a program called bank.py 
 
