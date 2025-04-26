@@ -40,7 +40,7 @@ print(f"The total amount is {total} cents.")
 euro= total // 100
 cent= total % 100
 
-# add in string to function oyu want printed, with euro and cent included
+# add in string to function you want printed, with euro and cent included
 # add the 02d to make sure it only displays to 2 digits even if you have to add a 0
 
 print(f"the sum of these is €{euro}.{cent:02d}")

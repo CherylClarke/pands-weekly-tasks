@@ -18,19 +18,91 @@ Reference: Andrew beatty, week 03 Lecture on Strings
 
 
 ## weekly task 02
+## bank.py
+
 Write a program called bank.py 
 
 The program should:
 
-                Prompt the user and read in two money amounts (in cent)
-                Add the two amounts
-                Print out the answer in a human readable format with a euro sign and decimal point between the euro and cent of the amount 
+1. Prompt the user and read in two money amounts (in cent)
+First must prompt the user to input 2 different money amounts in cents.
+Name the money amounts will be (amount1) and (amount2)
 
-$ python bank.py
-Enter amount1(in cent): 65
-Enter amount2(in cent): 180
+both amounts are already integers but if you wanted to check this you could check with
+"print(type(65))"for amount1 for example
+Reference: W3shools (2025). Python numbers. [online] Available at : https://www.w3schools.com/python/python_numbers.asp [Accessed 26 April 2025]
 
-The sum of these is €2.45
+Input string to prompt user to input cent amount, (this will ask the question)
+do this for both amount1 and then amount2
+
+Reference: Andrew beatty lectures week 2.
+Reference: Chatgpt,prompt- in python, prompt the user and read in two money amounts (in cent)
+https://chatgpt.com/c/680d22bf-a100-8003-b9c8-65a593ae6a21,[Accesssed 26 April 2025].
+
+amount1 = int(input("enter amount 1 in cents: "))
+
+int for integer amount, input for the string you want printed(the question), and : for the answer to be input by user
+do for both
+
+2. Add the two amounts
+
+I am going to use "total" for the sum of both amount1 and amount2.
+
+eg. total=(amount1 + amount2)
+
+then to display the results use print function
+will using the f sting to change the variable {total} to total when run
+
+eg. print(f"The total amount is {total} cents.")
+
+Reference: Andrew beatty lab 2.2 first programs
+Reference: Chatgpt, prompt was "add the 2 amounts, and print"
+https://chatgpt.com/c/680d22bf-a100-8003-b9c8-65a593ae6a21 [Accessed 26 April 2025]. 
+
+
+3. Print out the answer in a human readable format with a euro sign and decimal point between the euro and cent of the amount 
+
+First I need to finds the amount in full euros(int) and second amount in cents the remander as a percentage.
+
+first divide total by 100 use // ,to get euro amount
+
+
+Going to make "euro" = the result
+eg. euro= total // 100
+
+Reference: lectures in week 2.
+
+Reference: stackoverflow. (2025). / v // for division in Python. [online] Available at:  https://stackoverflow.com/questions/183853/vs-for-division-in-python/183870#183870` [Accessed 26 April 2025]
+
+Reference: Quickref.Me.(2025) Python cheatsheet(online) Available at:https://quickref.me/python.html [Accessed 20 April. 2025]
+
+
+Secondly to get percentage use % ,to get cent amount.
+
+Im going to make "cent" = the result
+cent= total % 100
+
+
+Reference:Andrew Beatty lectures week 2.
+Reference:  Quickref.Me.(2025) Python cheatsheet(online) Available at:https://quickref.me/python.html [Accessed 20 April. 2025]
+
+add in string to function you want printed, with euro and cent included
+add the 02d to make sure it only displays to 2 digits even if you have to add a 0
+
+print(f"the sum of these is €{euro}.{cent:02d}")
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## weekly task 03
 Bank account numbers can stored as 10 character strings, for security reasons some applications only display the last 4 characters (with the other other characters replaced with Xs).
 
