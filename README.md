@@ -117,8 +117,8 @@ account_number = input("Please enter a 10-digit account number: ")
 2. after account number is input,hide the first 6 digits with "xxxxxx"
 to access the first 6 digits use [6:] and replace them with "xxxxxx"
 
-#Reference Andrew Beatty lecture topic 5 data structures and associated jupyter notebook
-#Reference: Chatgpt:prompt -how to hide first 6 digits of account number python,
+Reference Andrew Beatty lecture topic 5 data structures and associated jupyter notebook
+Reference: Chatgpt:prompt -how to hide first 6 digits of account number python,
  https://chatgpt.com/c/680d6d03-cba4-8003-af4e-d11d931774e0. [Accessed 26 April 2025]
 
 Hidden_account = "xxxxxx" + account_number[6:] 
