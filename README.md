@@ -243,6 +243,7 @@ print("Its the weekend, Yay!")
 
 
 ## weekly task 06
+## squareroot.py
 
 Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
 
@@ -257,3 +258,35 @@ This is a more difficult task than some of the others, but will be marked equall
 $ python squareroot.py
 Please enter a positive number: 14.5
 The square root of 14.5 is approx. 3.8.
+
+
+?????
+
+## Weekly task 07.
+
+##
+
+Write a program that reads in a text file and outputs the number of e's it contains. Think about what is being asked here, document any assumptions you are making.
+
+The program should take the filename from an argument on the command line. I have not shown you how to do this, you need to look it up.
+
+Marks will be given for dealing with errors eg no argument, filename that does not exist, or is not a text file.
+
+
+python es.py moby-dick.txt
+116960
+
+## weekly task 08
+## plottask.py
+
+
+Write a program called plottask.py that displays:
+
+a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, 
+and a plot of the function  h(x)=x3 in the range 0 to 10, 
+
+on the one set of axes.
+
+Some marks will be given for making the plot look nice (legend etc).
+
+Please put a copy of the image of the plot (.png file) into the repository
