@@ -194,24 +194,52 @@ except ValueError:
 
 
 ## weekly task 05
+## weekday.py
 
-Write a program that outputs whether or not today is a weekday. (The program should be called weekday.py)
-
-You will need to search the web to find how you work out what day it is.
-
-An example of running this program on a Thursday is given below.
-
-$ python weekday.py
-
-Yes, unfortunately today is a weekday.
+Had to search how to import data and time functions
 
 
-An example of running it on a Saturday is as follows:
+Reference: geeksforgeeks. (2025). weekday function of datetime. date class in python [online] Available at: https://www.geeksforgeeks.org/weekday-function-of-datetime-date-class-in-python/ accessed 27 April 2025].
 
-$ python weekday.py
 
-It is the weekend, yay!
-There is no user input.
+ first step : import date and time function
+
+
+import datetime
+
+to get current date need to apply below function 
+
+= today
+
+today = datetime.datetime.today().weekday()
+
+Reference : chatgpt.com - prompt , what does weekday() do? https://chatgpt.com/c/680d7a1a-4d54-8003-8840-3fdd7ffaca05
+
+-to further understand the functions
+
+
+weekday() returns 0 (Monday) to 6 (Sunday)
+
+each day is represented by an integer 0-4 for monday to friday and 5-6 for saturday and sunday
+
+
+
+ask "if" today is less that 5, if yes print this "Yes, unfortunately today is a weekday" for weekday 
+
+or "else" if not less than 5 print this "No, today is a weekend! Enjoy!" for weekend
+
+
+if today < 5:
+
+    print("Yes, unfortunately today is a weekday.")
+    
+else:
+    print("Its the weekend, Yay!")
+
+
+
+
+
 
 ## weekly task 06
 
