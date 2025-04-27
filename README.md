@@ -264,17 +264,77 @@ The square root of 14.5 is approx. 3.8.
 
 ## Weekly task 07.
 
-##
-
-Write a program that reads in a text file and outputs the number of e's it contains. Think about what is being asked here, document any assumptions you are making.
-
-The program should take the filename from an argument on the command line. I have not shown you how to do this, you need to look it up.
-
-Marks will be given for dealing with errors eg no argument, filename that does not exist, or is not a text file.
+## Count_es.py ## moby_dick.txt
 
 
-python es.py moby-dick.txt
-116960
+Write a program that reads in a text file and outputs the number of e's it contains.
+
+first got moby-dick.txt file from asatevenClontz github and download it to my computer and uploaded it to my github
+into the pands-weekly -tasks folder so it can be accessed 
+
+
+Reference : github (2025) mobydick.txt {online] Available at: https://gist.github.com/StevenClontz/4445774 [accessed 27 April 2025]
+
+
+
+
+now i must write a program that reads in a txt file and a program that will count the es in the txt file
+
+
+
+import sys
+
+
+now to count the es from the txt file in question
+
+def count_es(filename):
+   
+    try:
+        with open(filename, 'r') as file:
+            content = file.read()
+            e_count = content.lower().count('e')
+        return e_count
+
+if cant find file print below
+
+    except FileNotFoundError:
+        print(f"Error: The file '{filename}' was not found.")
+        return None
+
+if cant find variable (e)
+
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+        return None
+If arguemnt is less than 2 in length 
+def main():
+    if len(sys.argv) < 2:
+        print("Usage: python count_es.py filename.txt")
+        sys.exit(1)
+
+    filename = sys.argv[1]
+    e_count = count_es(filename)
+
+if count is anything above none print, "file name"moby_dick.txt" ,contain "e count" and "e" characters"
+
+    if e_count is not None:
+        print(f"The file '{filename}' contains {e_count} 'e' characters.")
+
+if __name__ == "__main__":
+    main()
+
+
+#Reference: - prompt- how to download moby-dick.txt file from github repo https://chatgpt.com/c/680e761e-0d4c-8003-8711-ad44b4b72061
+
+#Reference: https://gist.github.com/StevenClontz/4445774
+
+
+
+
+
+
+
+
 
 ## weekly task 08
 ## plottask.py
