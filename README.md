@@ -144,8 +144,11 @@ else
 
 
 def collatz(number):
+
 if number % 2 == 0:
+
 result = number // 2
+
 print(result)
 
 to see if the value input would have a remainder that would be the same as 0, when divided by 2
@@ -155,8 +158,11 @@ the condition would be fulfilled and print results
 Reference: 365datascience.com(2023). explaining if x % 2 == 0. [online] Available at: https://365datascience.com/question/please-explain-if-x-2-0/  [accessed 26 April 2025] 
 
 else:
+
 result = 3 * number + 1
+
 print(result)
+
 return result
 
 else muiltple result by 3 and add 1
@@ -165,8 +171,12 @@ else muiltple result by 3 and add 1
 
 
 and try:
+
+
 n = int(input("Enter a positive integer: "))
+
 while n != 1:
+
 n = collatz(n)
 
 -to make sure input is an integer (n), keep loop going until n = 1
