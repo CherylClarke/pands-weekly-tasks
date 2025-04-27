@@ -231,9 +231,10 @@ or "else" if not less than 5 print this "No, today is a weekend! Enjoy!" for wee
 
 if today < 5:
 
-    print("Yes, unfortunately today is a weekday.")
+  print("Yes, unfortunately today is a weekday.")
     
 else:
+
     print("Its the weekend, Yay!")
 
 
